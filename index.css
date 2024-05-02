@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+body {
+    background-color: rgb(44, 44, 44);
+}
+header {
+    padding: 30px;
+    background-color: black;
+}
+header #logo-header {
+    height: 125px;
+}
+header nav ul {
+    list-style: none;
+}
+
+header .header-link {
+    color: #ffd21a;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: montserrat;
+}
+footer #logo-footer {
+    position: absolute;
+    height: 125px;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, 0);
+}
+
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 125px;
+    padding: 10px;
+    background-color: black;
+}
+
+@media (max-width: 770px) {
+    footer #logo-footer {
+        width: 150px;
+        object-fit: contain;
+        transform: translate(0, 0);
+        padding: 0;
+        position: initial;
+        /* right: 0px; */
+    }
+    footer {
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+    footer span {
+        width: 90%;
+    }
+}
+footer span {
+    color: #ffd21a;
+}
+
+main div#video-container {
+    display: flex;
+    padding: 20px;
+    border: 3px solid #ffd21a;
+    margin: 50px;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+}
+
+main .card .card-image {
+    height: 250px;
+}
+
+main .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #ffd21a;
+    padding: 30px;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid #ffd21a;
+    margin: 30px;
+    border-radius: 15px;
+}
+main .card .card-title {
+    background-color: #444;
+    text-align: center;
+}
+
+main div.rutina-container {
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+main div.rutina-container div.info-container,
+main div.rutina-container div.description-container {
+    background-color: #444;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 15px;
+}
+main div.rutina-container div.info-container h2.rutina-name,
+.info-container .rutina-days {
+    color: #ffd21a;
+}
+
+main div.about-me-container {
+    background-color: black;
+    border: 5px solid #ffd21a;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+main div.about-me-container p {
+    color: #ffd21a;
+}
+main div.about-me-image {
+    padding: 10px;
+    border: 5px solid #ffd21a;
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+    border-radius: 15px;
+}
+main div.about-me-image img {
+    height: 550px;
+    width: 350px;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 15px;
+}
+main div#tecnica-container {
+    background-color: black;
+    padding: 10px;
+    margin: 20px;
+    border: 5px solid #ffd21a;
+    border-radius: 15px;
+}
+main div#tecnica-container h2 {
+    color: #ffd21a;
+}
+main div.ejercicios-container img {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 15px;
+}
+main div.ejercicios-container {
+    background-color: black;
+    padding: 20px;
+    border: 5px solid #ffd21a;
+    margin: 20px;
+    border-radius: 15px;
+}
+main div.ejercicios-container h3 {
+    color: #ffd21a;
+}
+hr.separator {
+    border-top: 2px solid #ffd21a;
+}
+main div#video-container {
+    border-radius: 15px;
+}
+main div#video-container iframe {
+    border-radius: 15px;
+}
