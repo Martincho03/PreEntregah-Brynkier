@@ -39,7 +39,9 @@ header .header-link {
 }
 
 footer {
-  position: relative;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
   display: flex;
   align-items: center;
   height: 125px;
@@ -75,10 +77,17 @@ footer #logo-footer {
     /* right: 0px; */
   }
   .about-me-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
   .about-me-container .about-me-image {
-    width: auto;
+    width: calc(100% - 20px) !important;
+  }
+  .about-me-container .about-me-image img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
   }
   header {
     flex-direction: column;
@@ -111,6 +120,9 @@ footer #logo-footer {
     font-size: 20px;
     font-family: montserrat;
   }
+}
+main {
+  padding-bottom: 135px;
 }
 main #video-container {
   display: flex;
@@ -159,9 +171,15 @@ main .about-me-container {
   display: flex;
 }
 main .about-me-container .about-me-image {
-  width: 630px;
+  width: 20%;
+}
+main .about-me-container .about-me-image img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 main .about-me-container .about-me-info {
+  width: 80%;
   background-color: black;
   border: 5px solid #ffd21a;
   margin: 10px;
