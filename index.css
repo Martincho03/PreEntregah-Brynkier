@@ -74,7 +74,6 @@ footer #logo-footer {
     transform: translate(0, 0);
     padding: 0;
     position: initial;
-    /* right: 0px; */
   }
   .about-me-container {
     display: flex;
@@ -202,7 +201,7 @@ main .about-me-image {
 main .about-me-image img {
   height: 550px;
   width: 350px;
-  object-fit: cover;
+  object-fit: contain !important;
   object-position: right;
   border-radius: 15px;
 }
