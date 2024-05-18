@@ -79,7 +79,6 @@ footer {
             transform: translate(0, 0);
             padding: 0;
             position: initial;
-            /* right: 0px; */
         }
     }
 
@@ -87,8 +86,6 @@ footer {
         display: flex;
         flex-direction: column;
         width: 100%;
-        // background-color: red important;
-        // font-size: 900px;
 
         .about-me-image {
             width: calc(100% - 20px) !important;
